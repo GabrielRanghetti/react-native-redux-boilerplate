@@ -23,9 +23,9 @@ class Api {
         return this.xhr(route, params, 'DELETE')
     }
 
-    //TODO Change host
+    //TODO Insert host
     static xhr(route, params, verb) {
-        const host = 'http://www.recipepuppy.com';
+        const host = '';
         const url = `${host}${route}`;
         let options = Object.assign({ method: verb }, params ? { body: JSON.stringify(params) } : null );
         options.headers = Api.headers();
